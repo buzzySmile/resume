@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in LateX
+% Author : Alexander Makarov
+% Based on work by : Sourabh Bajaj, Brandon High
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Custom Bullets
+\renewcommand{\labelitemi}{\textsc{}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item[\textsc{}]\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingDouble}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textbf{#3} & #4 \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    \textbf{\Large Alexander Makarov} \\ \vspace{1pt}
+    \small +996 990060786 $|$ Bishkek, Kyrgyzstan\\
+    \href{mailto:makarov.san@gmail.com}{makarov.san@gmail.com} $|$ \href{https://www.linkedin.com/in/alexvmakarov/}{\underline{linkedin.com/in/alexvmakarov}}
+    % \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bauman Moscow State Technical University}{Moscow, Russia}
+      {Diploma Engineer, Biomedical Engineering}{2003 -- 2009}
+      \resumeItemListStart
+        \resumeItem{Note}{Participated in the 3rd Moscow-Bavarian Joint Advanced Student School (MB-JASS)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Senior Flutter Developer}{Feb 2024 -- Present}
+      {EV2Go}{Remote}
+      \resumeItemListStart
+        \resumeItem{Released from scratch to market}
+          {EV charging points app: find, book, drive, charge (Flutter, BLoC)}
+        \resumeItem{White labeling}
+          {Developed an architecture for flexible white label configuration}
+        \resumeItem{Lead role}
+          {Planned and evaluated priorities for development tasks. Managed microteam}
+      \resumeItemListEnd
+
+    \resumeSubheadingDouble
+    {Flutter Developer}{June 2019 -- December 2020}
+    {Flutter Team Lead}{January 2021 -- December 2023}
+      {SIGMA-IT}{Moscow, Russia}
+        \resumeItemListStart
+          \resumeItem{Products released to market}
+          {Personal electricity payer account app (Flutter, BLoC-based arch); EV charging points app (Flutter, Riverpod); Electric meter reading application for workers (Flutter, Redux); Local Amateur Hockey League social app (Flutter, BLoC)}
+          \resumeItem{Promotion}
+          {Promoted after 1.5 years due to strong performance and organizational impact}
+          \resumeItem{Process Improvement}
+          {Introduced CI/CD (Gitlab, publishing to stores infrastructure), autoversioning, tech doc creation}
+          \resumeItem{Recruitment}
+          {Conduct more than 50 technical interviews for Flutter positions. Recruited 9 engineers, formed two teams}
+          \resumeItem{Community}
+          {Held tech meetups and courses}
+        \resumeItemListEnd
+
+    \resumeSubheading
+    {Software Developer / DevOps}{Oct 2017 -- Oct 2018}
+      {ForCode}{Moscow, Russia}
+      \resumeItemListStart
+        \resumeItem{DevOps}
+          {Developed Docker images for testing microservices together (Docker Compose) for dev env and CI}
+        \resumeItem{Backend}
+          {Completed refactoring a couple of Django microservices}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Software Developer}{2017}
+    {Cleverciti Systems GmbH}{Munich, Germany}
+      \resumeItemListStart
+        \resumeItem{Python tools}
+          {Developed configuration update system for remote hosts}
+        \resumeItem{BI Frontend}
+          {Built Business Intelligence page for clients (Node.js + jQuery + DC.js)}
+        \resumeItem{DB Backup Tool}
+          {Created DB import tool by schedule (C\#, MongoDB)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {C++/Qt Developer}{2015 - 2016}
+      {OK.RU}{Saint Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Desktop Client}
+          {Led development of a cross-platform desktop IM client (Win/Mac/Linux) from prototype to release}
+        \resumeItem{Networking}
+          {Designed cross-platform Qt-based TCP/SSL transport library}
+        \resumeItem{UI}
+          {Developed modern QML application for desktops}
+        \resumeItem{Tooling}
+          {Developed and integrated Crash reporting system \& Autoupdater}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Android Developer}{2014-2015}
+      {Freelance}{Remote}
+      \resumeItemListStart
+        \resumeItem{Created app from scratch}
+        {Food Delivery App with online payment and map tracking \& Reader App for pet magazine}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Embedded System Engineer}{2009 -- 2013}
+      {SNIIP-ASKUR}{Moscow, Russia}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed systems on Silabs-based microcontrollers and application for pairing with PC}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS----------- % Removed as none listed in source MD
+% \section{Certifications and Post-Academic Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Kubernetes Certified Application Developer}
+%       {Linux Foundation – 2021}
+%     \resumeSubItem{Machine Learning Nanodegree}
+%       {Udacity – Jan 2017 to Jul 2017; coursework included Linear Regression, Neural Networks, and TensorFlow}
+%     \resumeSubItem{Docker Certified Associate}
+%       {Docker – Jun 2018 to Jun 2020 (Expired)}
+%     \resumeSubItem{Puppet Professional Certification}
+%       {Puppet – May 2015}
+%   \resumeSubHeadingListEnd
+
+%-----------PROJECTS----------------- % Removed as none listed in source MD
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{\href{https://github.com/kustomize-everything/}{kustomize-everything}}
+%       {Suite of GitHub actions for working with Kustomize/GitOps using the Rendered YAML Manifests GitOps pattern.}
+%     \resumeSubItem{\href{https://github.com/highb/asdf-teleport-ent}{asdf-teleport-ent}}
+%       {asdf plugin for managing Teleport CLI versions.}
+%     \resumeSubItem{\href{https://github.com/highb/bad-parrots}{bad-parrots}}
+%       {Collection of scripts for working with local LLMs in Docker.}
+%     \resumeSubItem{\href{https://github.com/highb/pathspec-ruby}{pathspec-ruby}}
+%       {Ruby library for parsing .gitignore-like files.}
+%     \resumeSubItem{\href{https://github.com/highb/resume}{resume}}
+%       {\LaTeX source for this document.}
+%   \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Dart, Flutter}
+    \resumeSubItem{State Management}{BLoC, Riverpod, Provider, Redux, GetX}
+    \resumeSubItem{Architecture}{Clean Architecture, SOLID}
+    \resumeSubItem{Testing}{Unit testing, Widget testing, Integration testing}
+    \resumeSubItem{CI/CD}{Gitlab CI, Github Actions}
+    \resumeSubItem{Network}{REST API, HTTP, Dio, WebSocket, Centrifuge, SignalR}
+    \resumeSubItem{Databases}{SQLite, Firebase/Firestore, Sembast}
+    \resumeSubItem{Version Control}{Git, Subversion, Mercurial}
+    \resumeSubItem{Agile methodologies}{Scrum, Kanban}
+    \resumeSubItem{Leadership}{Technical leadership, Mentoring, Code review}
+    \resumeSubItem{Concepts}{Cross-platform development, UI/UX, Debugging}
+    \resumeSubItem{Human Languages}{Fluent in Russian (native), English (Professional Working)}
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
