@@ -52,6 +52,15 @@
 
 %-------------------------
 % Custom commands
+\newcommand{\resumeParagraph}[1]{
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=*]
+  \item[]
+    #1
+  \end{itemize}
+  \vspace{-5pt}
+}
+
 \newcommand{\resumeItem}[2]{
 \item[\textsc{}]\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -95,71 +104,65 @@
     \textbf{\Large Alexander Makarov} \\ \vspace{1pt}
     \small +996 990060786 $|$ Bishkek, Kyrgyzstan\\
     \href{mailto:makarov.san@gmail.com}{makarov.san@gmail.com} $|$ \href{https://www.linkedin.com/in/alexvmakarov/}{\underline{linkedin.com/in/alexvmakarov}}
-    % \href{https://github.com/...}{\underline{github.com/jake}}
+    % \href{https://github.com/...}{\underline{github.com/buzzySmile}}
 \end{center}
 
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bauman Moscow State Technical University}{Moscow, Russia}
-      {Diploma Engineer, Biomedical Engineering}{2003 -- 2009}
-      \resumeItemListStart
-        \resumeItem{Note}{Participated in the 3rd Moscow-Bavarian Joint Advanced Student School (MB-JASS)}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\resumeParagraph{
+  Results-driven Flutter Team Lead with over 5 years of dedicated Flutter experience and ~3 years in leadership, delivering multiple mobile applications from scratch to market. This focus builds upon 10+ years of diverse software engineering experience, including desktop (C++/Qt) and mobile (Android) development. Experienced in establishing CI/CD pipelines (GitLab, Docker) and applying DevOps principles. Skilled in leading development teams, mentoring engineers, improving processes, and collaborating effectively in remote, international settings. Fluent in Russian (native) and English (Professional Working).
+}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-    {Senior Flutter Developer}{Feb 2024 -- Present}
-      {EV2Go}{Remote}
+    {Lead Flutter Developer}{Feb 2024 -- Present}
+      {EV2Go (Eastern Europe Electric Vehicles charging platform)}{Remote}
       \resumeItemListStart
         \resumeItem{Released from scratch to market}
-          {EV charging points app: find, book, drive, charge (Flutter, BLoC)}
+          {Electric Vehicles charge points app: find, book, drive, charge (Flutter, BLoC)}
         \resumeItem{White labeling}
-          {Developed an architecture for flexible white label configuration}
+          {Developed an architecture for flexible white label configuration \& different ui kits}
         \resumeItem{Lead role}
-          {Planned and evaluated priorities for development tasks. Managed microteam}
+          {Collaborated with product team. Planned and evaluated priorities for development. Managed microteam}
       \resumeItemListEnd
 
     \resumeSubheadingDouble
-    {Flutter Developer}{June 2019 -- December 2020}
     {Flutter Team Lead}{January 2021 -- December 2023}
-      {SIGMA-IT}{Moscow, Russia}
+    {Flutter Developer}{June 2019 -- December 2020}
+      {SIGMA-IT (Leading IT solutions for energy providers)}{Moscow, Russia}
         \resumeItemListStart
           \resumeItem{Products released to market}
           {Personal electricity payer account app (Flutter, BLoC-based arch); EV charging points app (Flutter, Riverpod); Electric meter reading application for workers (Flutter, Redux); Local Amateur Hockey League social app (Flutter, BLoC)}
+          \resumeItem{Process Improvement}
+          {Introduced CI/CD for teams/projects, integrated Gitlab, Docker \& publishing to stores. Developed autoversioning \& tech doc standarts}
           \resumeItem{Promotion}
           {Promoted after 1.5 years due to strong performance and organizational impact}
-          \resumeItem{Process Improvement}
-          {Introduced CI/CD (Gitlab, publishing to stores infrastructure), autoversioning, tech doc creation}
           \resumeItem{Recruitment}
-          {Conduct more than 50 technical interviews for Flutter positions. Recruited 9 engineers, formed two teams}
+          {Conduct more than 50 technical interviews for different Flutter positions. Recruited 9 engineers, formed 2 teams}
           \resumeItem{Community}
-          {Held tech meetups and courses}
+          {Mentored multiple interns \& juniors, guiding them through development practices and industry standards. Held tech meetups and courses.}
         \resumeItemListEnd
 
     \resumeSubheading
-    {Software Developer / DevOps}{Oct 2017 -- Oct 2018}
-      {ForCode}{Moscow, Russia}
+    {Software Engineer and DevOps}{Oct 2017 -- Oct 2018}
+      {ForCode (Commercial bank services developer)}{Moscow, Russia}
       \resumeItemListStart
         \resumeItem{DevOps}
-          {Developed Docker images for testing microservices together (Docker Compose) for dev env and CI}
+          {Developed microservice images and orchestrated them for development, testing, and CI (docker-compose)}
         \resumeItem{Backend}
           {Completed refactoring a couple of Django microservices}
       \resumeItemListEnd
 
     \resumeSubheading
     {Software Developer}{2017}
-    {Cleverciti Systems GmbH}{Munich, Germany}
+    {Cleverciti Systems GmbH (Parking spaces monitoring system)}{Munich, Germany}
       \resumeItemListStart
         \resumeItem{Python tools}
-          {Developed configuration update system for remote hosts}
+          {Developed configuration update system for remote hosts (sensors)}
         \resumeItem{BI Frontend}
           {Built Business Intelligence page for clients (Node.js + jQuery + DC.js)}
         \resumeItem{DB Backup Tool}
@@ -168,7 +171,7 @@
 
     \resumeSubheading
     {C++/Qt Developer}{2015 - 2016}
-      {OK.RU}{Saint Petersburg, Russia}
+      {OK.RU (Largest Eastern Europe Social Network)}{Saint Petersburg, Russia}
       \resumeItemListStart
         \resumeItem{Desktop Client}
           {Led development of a cross-platform desktop IM client (Win/Mac/Linux) from prototype to release}
@@ -191,40 +194,9 @@
     \resumeSubheading
     {Embedded System Engineer}{2009 -- 2013}
       {SNIIP-ASKUR}{Moscow, Russia}
-      \resumeItemListStart
-        \resumeItem{}
-          {Developed systems on Silabs-based microcontrollers and application for pairing with PC}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------CERTIFICATIONS----------- % Removed as none listed in source MD
-% \section{Certifications and Post-Academic Education}
-%   \resumeSubHeadingListStart
-%     \resumeSubItem{Kubernetes Certified Application Developer}
-%       {Linux Foundation – 2021}
-%     \resumeSubItem{Machine Learning Nanodegree}
-%       {Udacity – Jan 2017 to Jul 2017; coursework included Linear Regression, Neural Networks, and TensorFlow}
-%     \resumeSubItem{Docker Certified Associate}
-%       {Docker – Jun 2018 to Jun 2020 (Expired)}
-%     \resumeSubItem{Puppet Professional Certification}
-%       {Puppet – May 2015}
-%   \resumeSubHeadingListEnd
-
-%-----------PROJECTS----------------- % Removed as none listed in source MD
-% \section{Projects}
-%   \resumeSubHeadingListStart
-%     \resumeSubItem{\href{https://github.com/kustomize-everything/}{kustomize-everything}}
-%       {Suite of GitHub actions for working with Kustomize/GitOps using the Rendered YAML Manifests GitOps pattern.}
-%     \resumeSubItem{\href{https://github.com/highb/asdf-teleport-ent}{asdf-teleport-ent}}
-%       {asdf plugin for managing Teleport CLI versions.}
-%     \resumeSubItem{\href{https://github.com/highb/bad-parrots}{bad-parrots}}
-%       {Collection of scripts for working with local LLMs in Docker.}
-%     \resumeSubItem{\href{https://github.com/highb/pathspec-ruby}{pathspec-ruby}}
-%       {Ruby library for parsing .gitignore-like files.}
-%     \resumeSubItem{\href{https://github.com/highb/resume}{resume}}
-%       {\LaTeX source for this document.}
-%   \resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
@@ -233,16 +205,27 @@
     \resumeSubItem{State Management}{BLoC, Riverpod, Provider, Redux, GetX}
     \resumeSubItem{Architecture}{Clean Architecture, SOLID}
     \resumeSubItem{Testing}{Unit testing, Widget testing, Integration testing}
-    \resumeSubItem{CI/CD}{Gitlab CI, Github Actions}
+    \resumeSubItem{CI/CD}{Docker, Docker Compose, Gitlab CI, Github Actions}
     \resumeSubItem{Network}{REST API, HTTP, Dio, WebSocket, Centrifuge, SignalR}
     \resumeSubItem{Databases}{SQLite, Firebase/Firestore, Sembast}
     \resumeSubItem{Version Control}{Git, Subversion, Mercurial}
     \resumeSubItem{Agile methodologies}{Scrum, Kanban}
     \resumeSubItem{Leadership}{Technical leadership, Mentoring, Code review}
-    \resumeSubItem{Concepts}{Cross-platform development, UI/UX, Debugging}
+    \resumeSubItem{Concepts}{Cross-platform development, UI/UX Design, Debugging, Responsive/Adaptive Design}
     \resumeSubItem{Human Languages}{Fluent in Russian (native), English (Professional Working)}
   \resumeSubHeadingListEnd
 
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bauman Moscow State Technical University}{Moscow, Russia}
+      {Diploma Engineer, Biomedical Engineering}{2003 -- 2009}
+      \resumeItemListStart
+        \resumeItem{Note}{Participated in the 3rd Moscow-Bavarian Joint Advanced Student School (MB-JASS)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
